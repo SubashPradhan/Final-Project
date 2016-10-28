@@ -1,0 +1,101 @@
+body{
+	background-image: url('../images/techno-1.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 50px;
+    margin-left: 150px;
+}
+
+.header{
+    position: relative;
+    color: #4700B8;
+    font-size: 30px;
+    bottom: 30px;
+    margin-left: 150px;
+    font-family: 'Holtwood One SC';
+}
+
+.icon-bar{
+    position: relative;
+    bottom: 50px;
+    height: 70px;
+    width: 100%;
+    background-color: #d77575;
+    opacity: 0.75;
+    transition: margin-left .5s;
+}
+ 
+.right-bar{
+    float: left;
+}
+.media{
+    float: right;
+}
+
+
+#open, .media a, .icon-bar a {
+    padding: 16px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}  
+.right-bar a{
+    font-size: 30px;
+    padding: 16px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+#open:hover, .media:hover, .accordion a:hover, .icon-bar a:hover {
+    color: #ffffff;
+
+} 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    opacity: 0.75;
+}
+
+.sidenav a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#open{
+    font-size: 25px;
+    cursor: pointer;
+}
+
