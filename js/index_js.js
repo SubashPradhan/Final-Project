@@ -1,3 +1,6 @@
+
+
+
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en'}, 'google-translate');
 }
@@ -12,6 +15,7 @@ function closeNav() {
 	document.getElementById('container').style.marginLeft = "0";
 	
 }
+
 
 
 
