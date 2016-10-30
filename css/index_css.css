@@ -192,7 +192,7 @@ h3{
 
 
 .content-2{
-    margin: 0 200px 0 190px;
+    margin: 0 200px 0 200px;
         
 }
 
@@ -202,7 +202,7 @@ h1{
     
 }
 
- button{
+.button{
     height: 100px;
     font-size: 25px;
     width: 860px;
@@ -210,7 +210,7 @@ h1{
     cursor: pointer;
 }
 
-button:hover{
+.button:hover, .button:active {
     background-color: #ffff99;
     transition: 0.8s ease-in-out;
 }
@@ -232,12 +232,24 @@ button:hover{
 }
 
 .para-3{
-    width: 800px;
+    width: 840px;
     font-size: 30px;
     font-family: 'Pompiere', cursive;
     color: red;
 }
+.scroll-up{
+    margin-left: 50px;
+}
+.arrow{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
 
+/*third page */
 
-
+.slides{
+    width: 800px;
+    height: 800px;
+}
 
