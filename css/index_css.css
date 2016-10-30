@@ -147,6 +147,7 @@ h2{
     text-align: center;
     position: relative;
     top: -50px;
+    z-index: -1;
 }
 
 h3{
@@ -191,9 +192,8 @@ h3{
 
 
 .content-2{
-    margin-left: 150px;
-    width: 1200px;
-    
+    margin: 0 200px 0 190px;
+        
 }
 
 h1{
@@ -202,13 +202,29 @@ h1{
     
 }
 
-h4{
+ button{
+    height: 100px;
     font-size: 25px;
-    margin-right: 700px;
-    width: 400px;
+    width: 860px;
     font-family: 'Kelly Slab', cursive;
-
+    cursor: pointer;
 }
+
+button:hover{
+    background-color: #ffff99;
+    transition: 0.8s ease-in-out;
+}
+
+.panel{
+    padding: 18px;
+    display: none;
+    background-color: #ffffff;
+} 
+
+.panel.show{
+    display: block;
+}
+
 .gadgets{
     height: 250px;
     width: 250px;
@@ -216,10 +232,12 @@ h4{
 }
 
 .para-3{
+    width: 800px;
     font-size: 30px;
     font-family: 'Pompiere', cursive;
     color: red;
-
 }
+
+
 
 
