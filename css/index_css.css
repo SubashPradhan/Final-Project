@@ -85,6 +85,7 @@ h2{
     transition: 0.5s;
     padding-top: 60px;
     opacity: 0.75;
+    z-index: 1;
 }
 
 .sidenav a {
@@ -131,6 +132,7 @@ h2{
     background-color: #f9f9f9;
     width: 170px;
     margin-left: 25px;
+    z-index: -1;
 }
 
 .mydropdown a:hover {
@@ -193,7 +195,7 @@ h3{
 
 .content-2{
     margin: 0 200px 0 200px;
-        
+
 }
 
 h1{
@@ -205,7 +207,7 @@ h1{
 .button{
     height: 100px;
     font-size: 25px;
-    width: 860px;
+    width: 900px;
     font-family: 'Kelly Slab', cursive;
     cursor: pointer;
 }
@@ -232,13 +234,15 @@ h1{
 }
 
 .para-3{
-    width: 840px;
+    width: 880px;
     font-size: 30px;
     font-family: 'Pompiere', cursive;
     color: red;
 }
 .scroll-up{
+    position: fixed;
     margin-left: 50px;
+    bottom: 100px;
 }
 .arrow{
     height: 50px;
@@ -248,8 +252,73 @@ h1{
 
 /*third page */
 
-.slides{
-    width: 800px;
-    height: 800px;
+#gallery{
+    background-image: url('../images/techno-22.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+h4{
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Coiny', cursive;
 }
 
+.slides{
+    width: 650px;
+    height: 650px;
+    border: 5px solid black;
+
+}
+
+.slide-container{
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    max-width: 700px;
+    z-index: -1;
+}
+.myslides{
+    width: 100%;
+    display: none;
+
+}
+
+.side-button{
+    position: relative;
+    top: 50%;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    bottom: 500px;
+    color: #0000ff;
+    font-size: 50px; 
+    margin-left: 340px;
+}
+
+.next{
+    position: relative;
+    left: 750px;
+  }  
+
+
+.prev:hover, .next:hover{
+    background-color: #ffffff;
+}
+.prev:active, .next:active{
+    background-color: red;
+}
+
+.caption{
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+    font-size: 35px;
+    padding: 10px;
+    width: 100%
+}
+
+.para-4{
+    color: #ff0000;
+    font-family: 'Pompiere', cursive;
+}
