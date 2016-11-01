@@ -30,6 +30,24 @@ function closeNav() {
 	document.getElementById('container').style.marginLeft = "0";
 	
 }
+/*
+$(document).ready(function(){
+	var sideNav = document.getElementById("mySidenav");
+	var	container = document.getElementById("container");
+
+		function openNav(){
+			sideNav.width('10px');
+			container.marginLeft('10px');	
+		}
+
+		$(window).resize(function(){
+			if ($(window).width() < 580){	
+				openNav();}
+
+
+	});
+});
+*/
 
 // GO UP ARROW //
 $(document).ready(function () {
