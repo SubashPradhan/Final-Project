@@ -112,5 +112,11 @@ $(document).ready(function(){
 
 	$('.footer').hide();
 	$('.footer').show(3000);
+});	
+
+$(document).ready(function(){
+	$('.footer').click(function(){
+		$('.footer').effect('explode');
+	});
 });
 
