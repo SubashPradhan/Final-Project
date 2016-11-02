@@ -61,8 +61,8 @@ $(document).ready(function () {
 		}
 	});
 
-	$('.scroll-up').click(function () {
-		$("html, body").animate({
+	$('.scroll-up').click(function(){
+		$("body").animate({
 			scrollTop: 0
 		}, 'fast');
 		return false;
@@ -104,5 +104,13 @@ $(document).ready(function(){
 
 });
 
+// simple effects for footer and header //
 
+$(document).ready(function(){
+	$('h4').hide();
+	$('h4').show(4000);
+
+	$('.footer').hide();
+	$('.footer').show(3000);
+});
 

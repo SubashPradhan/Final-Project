@@ -46,9 +46,9 @@ h2{
 }
 
 .timeline{
-        position: relative;
-        top: 4px;
-    }
+    position: relative;
+    top: 4px;
+}
 
 #open, .media a {
     padding: 16px;
@@ -248,7 +248,7 @@ h1{
 h4{
     font-size: 45px;
     text-align: center;
-    font-family: 'Coiny', cursive;
+    font-family: 'Kelly Slab', cursive;
 }
 
 .slides{
@@ -285,7 +285,7 @@ h4{
 .next{
     position: relative;
     left: 750px;
-  }  
+}  
 
 
 .prev:hover, .next:hover{
@@ -360,12 +360,12 @@ h4{
 
     
     .media{
-        position: relative;
-        width: auto;
-        bottom: 55px;
-        float: right;
+        position: absolute;
+        width: 105px;
+        bottom: 117px;
+        left: 67%;
     }
-         
+    
     .open, .media a {
         padding: 0px;
         display: inline-block;
@@ -385,22 +385,20 @@ h4{
 
 
     .right-bar a{
-        font-size: 18px;
+        font-size: 16px;
         padding: 0px;
         display: inline-block;
         transition: all 0.3s ease;
         cursor: pointer;
         text-decoration: none;
-        margin: 4px;
+        margin: 2px;
     }
 
 
-    .open:hover, .accordion a:hover, .icon-bar a:hover {
+    .open:hover, .accordion a:hover, .icon-bar a:hover,.media a:hover {
         color: #ffffff;
     }
-    .media a:hover{
-        color: #0000ff;
-    }
+    
 
     .sidenav {
         height: 100%;
@@ -411,7 +409,7 @@ h4{
         background-color: #111;
         overflow-x: hidden;
         transition: 0.5s;
-        padding-top: 15px;
+        padding-top: 35px;
         opacity: 0.75;
         z-index: 1;
     }
@@ -505,7 +503,7 @@ h4{
         color: #000000;
     }
 
-/* 2nd page */
+    /* 2nd page */
 
     
     .content-2{
@@ -517,7 +515,7 @@ h4{
     h1{
         font-family: 'Abril Fatface', cursive;
         font-size: 20px;
-    
+        
     }
 
     .button{
@@ -570,8 +568,8 @@ h4{
         font-size: 10px;
     }
 
-/* gallery page */
- 
+    /* gallery page */
+    
     #gallery{
         /*
         background-image: url('../images/techno-22.jpg');
@@ -591,11 +589,9 @@ h4{
     }
 
     .slides{
-        width: 380px;
-        height: 380px;
+        width: 100%;
+        height: 350px;
         border: 5px solid black;
-        align-self: center;
-
     }
 
     .slide-container{
@@ -614,16 +610,16 @@ h4{
         position: relative;
         transition: 0.5s ease-in-out;
         cursor: pointer;
-        bottom: 380px;
+        bottom: 150px;
         color: #0000ff;
-        font-size: 40px; 
+        font-size: 35px; 
         margin-left: 0px;
     }
 
     .next{
         position: relative;
-        left: 350px;
-      }  
+        left: 90%;
+    }  
 
 
     .prev:hover, .next:hover{
