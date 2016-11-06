@@ -26,17 +26,16 @@ $(document).ready(function(){
 	});	
 
 	//side navigation when resized
-	$(window).resize(function(){
-		if ($(window).width() < 1024){
-			$('.open').click(function(){
-				$('.sidenav').css('width', '135px');
-				$('#container').css('marginLeft', '135px');
-				$('.icon-bar').css('display', 'none');
-			});
-			
-		}
-	});	
-
+	
+	if ($(window).width() < 1024){
+		$('.open').click(function(){
+			$('.sidenav').css('width', '135px');
+			$('#container').css('marginLeft', '135px');
+			$('.icon-bar').css('display', 'none');
+		});
+		
+	}
+	
 	//Go up arrow
 
 	$('.scroll-up').hide();
