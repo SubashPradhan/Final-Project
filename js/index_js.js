@@ -1,5 +1,3 @@
-//ACCORDION //
-
 $(document).ready(function(){
 	var acc = document.getElementsByClassName('accordion');
 	var i;
@@ -10,47 +8,37 @@ $(document).ready(function(){
 			this.nextElementSibling.classList.toggle("show");
 		}
 	}
-});
 
-// GOOGLE TRANSLATE //
+	//side navigation
 
-function googleTranslateElementInit() {
-	new google.translate.TranslateElement({pageLanguage: 'en'}, 'google-translate');
-}
-
-// SIDE NAVIGATION //
-
-function openNav() {
-	document.getElementById("mySidenav").style.width = "250px";
-	document.getElementById("container").style.marginLeft = "250px";
-}
-
-function closeNav() {
-	document.getElementById("mySidenav").style.width = "0";
-	document.getElementById('container').style.marginLeft = "0";
-	
-}
-/*
-$(document).ready(function(){
-	var sideNav = document.getElementById("mySidenav");
-	var	container = document.getElementById("container");
-
-		function openNav(){
-			sideNav.width('10px');
-			container.marginLeft('10px');	
-		}
-
-		$(window).resize(function(){
-			if ($(window).width() < 580){	
-				openNav();}
-
+	var mySidenav = document.getElementById("mySidenav");
+	var container = document.getElementById("container");
+	$('.open').click(function(){
+		$('.sidenav').css('width', '250px');
+		$('#container').css('marginLeft', '250px');
 
 	});
-});
-*/
+	
+	$('.closebtn').click(function(){
+		$('.sidenav').css('width', 0);
+		$('#container').css('marginLeft', 0);
+		$('.icon-bar').css('display', 'block');
+	});	
 
-// GO UP ARROW //
-$(document).ready(function () {
+	//side navigation when resized
+	$(window).resize(function(){
+		if ($(window).width() < 1024){
+			$('.open').click(function(){
+				$('.sidenav').css('width', '135px');
+				$('#container').css('marginLeft', '135px');
+				$('.icon-bar').css('display', 'none');
+			});
+			
+		}
+	});	
+
+	//Go up arrow
+
 	$('.scroll-up').hide();
 
 	$(window).scroll(function () {
@@ -68,17 +56,14 @@ $(document).ready(function () {
 		return false;
 	});
 
-});
+	//Slide-show gallery
 
-// SLIDE SHOW //
-
-$(document).ready(function(){
 	var currentIndex = 0,
 	items = $('.myslides'),
 	itemAmt = items.length;
 
 	function cycleItems() {
-		
+
 		var item = $('.myslides').eq(currentIndex);
 		items.hide();
 		item.css('display', 'block');
@@ -102,21 +87,21 @@ $(document).ready(function(){
 
 	cycleItems(0);
 
-});
+	// simple effects for footer and header 
 
-// simple effects for footer and header //
-
-$(document).ready(function(){
 	$('h4').hide();
 	$('h4').show(4000);
 
 	$('.footer').hide();
 	$('.footer').show(3000);
-});	
 
-$(document).ready(function(){
-	$('.footer').click(function(){
-		$('.footer').effect('explode');
+	// google-translate
+
+	$(window).load(function googleTranslateElementInit() {
+		new google.translate.TranslateElement({pageLanguage: 'en'}, 'google-translate');
 	});
+
+
+
 });
 

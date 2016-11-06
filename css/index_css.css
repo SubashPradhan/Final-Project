@@ -316,7 +316,8 @@ h4{
 @media all and (max-width: 480px){
 
     #index{
-        background: linear-gradient(#ffff00, #0000ff, #ff0000);
+        
+        background: -webkit-linear-gradient(bottom,rgba(0,0,0,1),rgba(0,0,0,0.5));
     }
 
     h2{
@@ -405,9 +406,9 @@ h4{
     }
 
     .sidenav a {
-        padding: 5px;
+        padding: 3px;
         text-decoration: none;
-        font-size: 15px;
+        font-size: 12px;
         color: #21BA7A;
         display: block;
         transition: 0.3s;
@@ -561,13 +562,13 @@ h4{
     /* gallery page */
     
     #gallery{
-        background: linear-gradient(#ffff00, #0000ff, #ff0000);
+        background: -webkit-linear-gradient(bottom,rgba(0,50,0,1),rgba(0,30,0,0.4));
     }
     
     h4{
         font-size: 20px;
         text-align: center;
-        font-family: 'Coiny', cursive;
+        font-family: 'Kelly Slab', cursive;
     }
 
     .slides{
