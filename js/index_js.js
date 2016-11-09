@@ -68,23 +68,23 @@ $(document).ready(function(){
 		item.css('display', 'block');
 	}
 
-	$('.next').click(function() {
-		currentIndex += 1;
-		if (currentIndex > itemAmt - 1) {
-			currentIndex = 0;
-		}
-		cycleItems();
-	});
+		$('.next').click(function() {
+			currentIndex += 1;
+			if (currentIndex > itemAmt - 1) {
+				currentIndex = 0;
+			}
+			cycleItems();
+		});
 
-	$('.prev').click(function() {
-		currentIndex -= 1;
-		if (currentIndex < 0) {
-			currentIndex = itemAmt - 1;
-		}
-		cycleItems();
-	});
+		$('.prev').click(function() {
+			currentIndex -= 1;
+			if (currentIndex < 0) {
+				currentIndex = itemAmt - 1;
+			}
+			cycleItems();
+		});
 
-	cycleItems(0);
+		cycleItems(0);
 
 	// simple effects for footer and header 
 
